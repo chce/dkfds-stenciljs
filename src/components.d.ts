@@ -7,11 +7,11 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface FdsAccordion {
+        "accordionId": string;
         /**
           * The first name
          */
         "header": string;
-        "id": string;
         "showInfo": boolean;
     }
 }
@@ -28,11 +28,11 @@ declare global {
 }
 declare namespace LocalJSX {
     interface FdsAccordion {
+        "accordionId"?: string;
         /**
           * The first name
          */
         "header"?: string;
-        "id"?: string;
         "showInfo"?: boolean;
     }
     interface IntrinsicElements {
